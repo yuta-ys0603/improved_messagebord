@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151119101732) do
+ActiveRecord::Schema.define(version: 20151119103540) do
 
   create_table "messages", force: :cascade do |t|
     t.string   "titile",     null: false
@@ -19,6 +19,13 @@ ActiveRecord::Schema.define(version: 20151119101732) do
     t.string   "signature",  null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "name",            null: false
+    t.string   "password_digest", null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
 end
