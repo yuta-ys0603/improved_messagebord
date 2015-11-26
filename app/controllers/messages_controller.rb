@@ -71,6 +71,6 @@ before_action :login?
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def message_params
-      params.require(:message).permit(:titile, :body)
+      params.require(:message).permit(:title, :body)
     end
 end
