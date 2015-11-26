@@ -8,7 +8,8 @@
 <% @messages.each do |message| %>
     <hr>
     <dl>
-      <dt>title</dt><dd><%= message.title %></dd>
+      <dt>title</dt><dd><%= message.titile %></dd>
+      <dt>day</dt><dd><%= message.updated_at%></dd>
       <dt>message</dt><dd><%= message.body %></dd>
       <dt>user</dt><dd><%= message.user.name %></dd>
     </dl>
